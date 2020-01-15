@@ -1,0 +1,51 @@
+My Favorite editor is Visual Studios Code, it is my favorite because you can pretty much use it for any language because it is open source and people are constantly putting out new plugins for it. I also like it because it has auto-complete, I find that to be very helpful because it saves time and gets you familiar with the syntax of the language. Lastly, it is very easy to navigate and use visual studios' code.
+
+touch a.txt
+
+touch b.txt
+
+touch a.bak
+
+touch b.bak
+
+touch a.py
+
+touch a.py
+
+-----------------------------
+
+for files in ' ls *.txt '
+
+do
+
+mv -- $file new_$file
+
+done
+
+-----------------------------
+for bakfile in ' ls *.bak '
+
+do
+
+if [ -f $bakfile ]
+then
+
+rm $ bakfile
+
+done
+
+-----------------------------
+
+for pyfile in ' ls *.py '
+do
+
+if [ wc -l $pyfile -gt 10]
+then 
+
+mv -- $pyfile long_$pyfile
+else
+
+mv -- $pyfile short_$pyfile
+
+done
+
